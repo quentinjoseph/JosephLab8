@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif; }
+
+h1 {
+  text-align: center; }
+
+li {
+  list-style-type: none;
+  text-align: center; }
+
+p {
+  text-align: center; }
+
+#red1 {
+  color: red;
+  text-align: center; }
+
+.lables {
+  text-align: center; }
+
+#form {
+  text-align: center; }
+
+.listed {
+  color: green; }
