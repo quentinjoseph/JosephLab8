@@ -46,27 +46,18 @@ var returned=[];
 var returnedDisp;
 var obj={};
 
+// add item function
 var addMe = function(){
-
 obj.name=document.getElementById('form').value;
 obj.price=Number(document.getElementById("form2").value);
   list.push(obj);
   console.log(list)
   theFunction();
-  var theFunction2b=function(){
-  returned.forEach(function (itm){
+  theFunction2();
 
-      var listAry = document.createElement('li');
-
-      returnedDisp=itm;
-      listAry.innerText = returnedDisp;
-      document.body.appendChild(listAry);
-
-  });
-  }
 }
 
-
+// function for adding totals
 var theFunction = function(){
   // var returned = [];
 list.forEach(function(itm){
@@ -76,24 +67,32 @@ list.forEach(function(itm){
 });
 
 }
+// var theFunctionb = function(){
+//   // var returned = [];
+//   for(i=0; i<1; i++){
+//   returned.push(itm.name + " " +itm.price);
+//   // total+=itm.price;
+//   // totalTax+=itm.price*1.06;
+// }
+//
+// }
 
+// function for displaying to html
 var theFunction2=function(){
 returned.forEach(function (itm){
-
     var listAry = document.createElement('li');
     listAry.className="listed";
     returnedDisp=itm;
     listAry.innerText = returnedDisp;
     document.body.appendChild(listAry);
-
 });
 }
 
 
 
-  console.log("sub-total " + total);
-  console.log("your total after tax " + totalTax.toFixed(2));
-  console.log("The total tax you paid is " + (totalTax-total).toFixed(2));
+  // console.log("sub-total " + total);
+  // console.log("your total after tax " + totalTax.toFixed(2));
+  // console.log("The total tax you paid is " + (totalTax-total).toFixed(2));
 // header
 var header1 = document.createElement('h1');
 header1.innerText = 'Shopping List';
@@ -103,6 +102,7 @@ var container = document.createElement('div');
 container.className=('container');
 container.style.width = '1px';
 container.style.height = '1px';
+
 document.body.appendChild(container);
 
 theFunction();

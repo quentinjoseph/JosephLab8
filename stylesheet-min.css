@@ -1,5 +1,6 @@
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  width: 65%; }
 
 h1 {
   text-align: center; }
@@ -18,8 +19,8 @@ p {
 .lables {
   text-align: center; }
 
-#form {
-  text-align: center; }
+input {
+  margin: auto; }
 
 .listed {
   color: green; }
